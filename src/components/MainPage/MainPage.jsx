@@ -2,106 +2,105 @@
 export default function MainPage() {
   return (
     <main className="wrapper">
-      <section className="relative overflow-hidden flex flex-col md:block">
-        <div className="inset-0 w-full h-auto z-0 object-cover">
-          <video
-            className="relative w-full h-auto bg-transparent hidden md:block"
-            loop
-            autoPlay
-            muted
-            playsInline
-            preload="metadata"
-            poster="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13213850/Celebrate-V_hero_d-cover.jpg?format=auto&width=1920"
-          >
-            <source
-              src="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13220818/Celebrate-V_hero_d-opt2.mp4"
-              type="video/mp4"
-            />
-            Ваш браузер не поддерживает видео.
-          </video>
-          <video
-            className="relative w-full h-auto bg-transparent md:hidden"
-            loop
-            autoPlay
-            muted
-            playsInline
-            preload="metadata"
-            poster="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13213846/Celebrate-V_hero_m_1-cover.jpg?format=auto&width=800"
-          >
-            <source
-              src="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13223109/Celebrate-V_hero_m_1-opt.mp4"
-              type="video/mp4"
-            />
-            Ваш браузер не поддерживает видео.
-          </video>
-        </div>
+      <section className="section-content">
+        <div className="section-content-container">
+          <div className="bg-wrapper">
+            <video
+              className="bg-content-desktop"
+              loop
+              autoPlay
+              muted
+              playsInline
+              preload="metadata"
+              poster="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13213850/Celebrate-V_hero_d-cover.jpg?format=auto&width=1920"
+            >
+              <source
+                src="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13220818/Celebrate-V_hero_d-opt2.mp4"
+                type="video/mp4"
+              />
+              Ваш браузер не поддерживает видео.
+            </video>
+            <video
+              className="bg-content-mobile"
+              loop
+              autoPlay
+              muted
+              playsInline
+              preload="metadata"
+              poster="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13213846/Celebrate-V_hero_m_1-cover.jpg?format=auto&width=800"
+            >
+              <source
+                src="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13223109/Celebrate-V_hero_m_1-opt.mp4"
+                type="video/mp4"
+              />
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
 
-        <div className="md:absolute md:bg-transparent bg-black w-full h-full py-13 md:py-0 lg:py-20 top-0 left-0 z-1">
-          <div className="h-full grid md:grid-cols-[1fr_28fr_1fr] grid-cols-[1fr_minmax(343px,22fr)_1fr] items-center">
-            <div className="grid md:grid-cols-[1fr_1fr] md:grid-rows-1 col-[2/3]">
-              <div className="w-full h-auto m-[40px_auto] text-white space-y-6 md:max-w-[35vw]">
-                <h1 class="text-[38px] leading-[43px] tracking-[2.5px] text-center uppercase font-normal font-[vieren-type-regular,Lato,sans-serif]">
-                  CELEBRATE V
-                </h1>
-                <h4 class="text-[22px] leading-[31px] tracking-[0.3px] text-center font-light font-[Lato,sans-serif]">
-                  Unlock priority access to VIEREN’s 5-Year Anniversary Collection — launching Fall 2025.
-                </h4>
+          <div className="section-content__content">
+            <div className="content-wrapper">
+              <div className="content-wrapper__grid">
+                <div className="content-wrapper__flex lg:m-auto">
+                  <h1 className="title-text whitespace-nowrap tracking-[2px] md:tracking-[2.5px] leading-[35px] md:leading-[43px] font-normal uppercase m-[10px_8px] lg:m-[0_0_30px_0]">
+                    CELEBRATE V
+                  </h1>
+                  <h4 className="description-text">
+                    Unlock priority access to VIEREN’s 5-Year Anniversary Collection — launching Fall 2025.
+                  </h4>
 
-                <form className="m-[40px_8%_0]">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    class="appearance-none bg-white border border-[#bbbbbb] box-border px-[13px] w-full text-[#3b3b3b]
-                    font-[Lato,sans-serif] font-light text-[15px] leading-[30px] tracking-[0.5px]
-                    h-[45px] rounded-none mb-[15px]" 
-                  />
-                  <button
-                    type="submit"
-                    class="appearance-button overflow-visible bg-[#575757] text-white h-[45px] cursor-pointer
-                    font-[Lato,sans-serif] font-normal text-[15px] tracking-[0.5px] text-center uppercase border-0
-                    box-border py-[9px] w-full"
-                  >
-                    join the waitlist
-                  </button>
-                  <p class="text-white font-[Lato,sans-serif] font-light text-[11px] leading-[2] tracking-[0.61px] text-center mt-[1rem]">
-                    By joining the list you agree to receive emails from VIEREN
-                  </p>
-                </form>
+                  <form className="p-[40px_8%_0] w-full">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="appearance-none bg-white border border-[#bbbbbb] box-border px-[13px] w-full text-[#3b3b3b]
+                      font-[Lato,sans-serif] font-light text-[15px] leading-[30px] tracking-[0.5px]
+                      h-[45px] rounded-none mb-[15px]" 
+                    />
+                    <button
+                      type="submit"
+                      className="appearance-button overflow-visible bg-[#575757] text-white h-[45px] cursor-pointer
+                      font-[Lato,sans-serif] font-normal text-[15px] tracking-[0.5px] text-center uppercase border-0
+                      box-border py-[9px] w-full transition-colors duration-300 hover:bg-[#979797]"
+                    >
+                      join the waitlist
+                    </button>
+                    <p className="text-white font-[Lato,sans-serif] font-light text-[11px] leading-[2] tracking-[0.61px] text-center mt-[1rem]">
+                      By joining the list you agree to receive emails from VIEREN
+                    </p>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
+        
       </section>
 
-      <section className="section-content relative overflow-hidden flex flex-col md:block">
-        <div className="sectionContent_container inset-0 w-full h-auto z-0 object-cover">
-          <div className="picture-wrapper relative w-full h-auto bg-transparent hidden md:block">
-            <img src="https://d3t8vy6km7cso3.cloudfront.net/2025/05/05210305/home-hero-scaled.jpeg?format=auto" alt="background, gold watches" className="picture-img" />
+      <section className="section-content ">
+        <div className="section-content-container">
+          <div className="bg-wrapper">
+            <img src="https://d3t8vy6km7cso3.cloudfront.net/2025/05/05210305/home-hero-scaled.jpeg?format=auto" alt="background, gold watches" className="bg-content-desktop" />
+            <img src="https://d3t8vy6km7cso3.cloudfront.net/2024/11/05133606/gold_banner_m-v5.jpg?format=auto&width=800" alt="background, gold watches" className="bg-content-mobile" />
           </div>
 
-          <div className="section-content__content md:absolute md:bg-transparent bg-black w-full h-full top-0 left-0 z-1">
-            <div className="content-wrapper h-full grid md:grid-cols-[1fr_28fr_1fr] grid-cols-[1fr_minmax(343px,22fr)_1fr] items-center">
-              <div className="grid md:grid-cols-[1fr_1fr] md:grid-rows-1 col-[2/3]">
-                <div className="w-full h-auto m-[40px_auto_40px_100px] flex flex-col items-center text-white space-y-6 md:max-w-[35vw] col-[2/3]">
-                  <h1 className="title-text text-[38px] leading-[43px] tracking-[2.5px] text-center uppercase font-normal font-[vieren-type-regular,Lato,sans-serif]">
+          <div className="section-content__content">
+            <div className="content-wrapper">
+              <div className="content-wrapper__grid">
+                <div className="content-wrapper__flex lg:m-[40px_auto_40px_150px] col-[2/3]">
+                  <h2 className="title-text whitespace-nowrap tracking-[2px] md:tracking-[2.5px] leading-[35px] md:leading-[43px] font-normal uppercase m-[10px_8px] lg:m-[0_0_30px]">
                     STAND OUT IN GOLD
-                  </h1>
+                  </h2>
 
-                  <h4 className="description-text text-[22px] leading-[31px] tracking-[0.3px] text-center font-light font-[Lato,sans-serif]">
+                  <h4 className="description-text">
                     Fusing sound and style
                   </h4>
 
-                  <button className="
-                      btn-call-to_action min-w-[150px] appearance-button overflow-visible bg-[#575757] text-white min-h-[45px] cursor-pointer
-                      font-[Lato,sans-serif] font-normal text-[14px] tracking-[0.4px] text-center uppercase border-0 leading-[45px] box-border px-[2em]
-                    "
-                  >
+                  <button className="btn-call-to_action">
                     EXPLORE STEREO
                   </button>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -109,9 +108,9 @@ export default function MainPage() {
 
       <section className="section-content">
         <div className="section-content-container">
-          <div className="video-wrapper">
+          <div className="bg-wrapper">
             <video
-              className="video-content"
+              className="bg-content-desktop"
               loop
               autoPlay
               muted
@@ -125,24 +124,40 @@ export default function MainPage() {
               />
               Ваш браузер не поддерживает видео.
             </video>
+
+            <video
+              className="bg-content-mobile"
+              loop
+              autoPlay
+              muted
+              playsInline
+              preload="metadata"
+              poster="https://d3t8vy6km7cso3.cloudfront.net/2024/03/27125820/Waves-hero-mobile_2024_cover.jpg?format=auto&width=800"
+            >
+              <source 
+                src="https://d3t8vy6km7cso3.cloudfront.net/2024/03/27125841/Waves-hero-mobile_2024_opt.mp4"
+                type="video/mp4"
+              />
+              Ваш браузер не поддерживает видео.
+            </video>
           </div>
 
           <div className="section-content__content">
             <div className="content-wrapper">
-              <div className="content__title">
-                <h2 className="title-text">
-                  "Bringing glamour to gender-neutral watchmaking"
-                </h2>
-              </div>
+              <div className="content-wrapper__grid">
+                <div className="content-wrapper__flex lg:m-auto">
+                  <h2 className="title-text tracking-[0.38px] md:tracking-[0.49px] leading-[39px] md:leading-[47px] font-light m-[10px_8px] lg:m-[0_0_10px_0]">
+                    "Bringing glamour to gender-neutral watchmaking"
+                  </h2>
 
-              <div className="content__description">
-                <img src="https://d3t8vy6km7cso3.cloudfront.net/2024/06/17171716/hodinkee-logo.png?format=auto&width=1920" alt="HODINKEE" />
-              </div>
+                  <div className="content__description m-[40px_22%_20px] lg:m-[40px_30%_20px]">
+                    <img src="https://d3t8vy6km7cso3.cloudfront.net/2024/06/17171716/hodinkee-logo.png?format=auto" alt="HODINKEE" />
+                  </div>
 
-              <div className="content__btn-call-to">
-                <button className="btn-call-to_action">
-                  DISCOVER THE ICON
-                </button>
+                  <button className="btn-call-to_action">
+                    DISCOVER THE ICON
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -368,37 +383,36 @@ export default function MainPage() {
         </div>
       </section>
 
-      <section className="section-content">
-        <div className="sectionContent_container">
-          <div className="picture-wrapper">
-            <img src="https://d3t8vy6km7cso3.cloudfront.net/2025/05/05210305/home-hero-scaled.jpeg?format=auto" alt="background, gold watches" className="picture-img" />
+      <section className="section-content ">
+        <div className="section-content-container">
+          <div className="bg-wrapper">
+            <img src="https://d3t8vy6km7cso3.cloudfront.net/2024/11/05140058/power-your-time_d-v4-scaled.jpg?format=auto" alt="background, gold watches" className="bg-content-desktop" />
+            <img src="https://d3t8vy6km7cso3.cloudfront.net/2024/11/24195528/power-your-time-m2.jpeg?format=auto&width=800" alt="background, gold watches" className="bg-content-mobile" />
           </div>
 
           <div className="section-content__content">
             <div className="content-wrapper">
-              <div className="content__title">
-                <h2 className="title-text">
-                  POWER YOUR TIME
-                </h2>
-              </div>
+              <div className="content-wrapper__grid">
+                <div className="content-wrapper__flex m-auto col-[2/3]">
+                  <h2 className="title-text tracking-[2px] md:tracking-[2.5px] leading-[35px] md:leading-[43px] font-normal uppercase m-[10px_8px] lg:m-[0_0_20px]">
+                    POWER YOUR TIME
+                  </h2>
 
-              <div className="content__description">
-                <h4 className="description-text">
-                  Experience the art of luxury watchmaking
-                </h4>
-              </div>
+                  <h4 className="description-text">
+                    Experience the art of luxury watchmaking
+                  </h4>
 
-              <div className="content__btn-call-to">
-                <button className="btn-call-to_action">
-                  ABOUT VIEREN
-                </button>
+                  <button className="btn-call-to_action">
+                    ABOUT VIEREN
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="support">
+      {/* <section className="support">
         <div className="support-container">
           <aside className="support__card">
             <div className="card__img">
@@ -433,7 +447,7 @@ export default function MainPage() {
             </div>
           </aside>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };
