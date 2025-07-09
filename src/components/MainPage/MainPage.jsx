@@ -2,87 +2,106 @@
 export default function MainPage() {
   return (
     <main className="wrapper">
-      <section className="banner">
-        <div className="banner-container">
-          <div className="video-wrapper">
-            <video
-              className="video-content"
-              loop
-              autoPlay
-              muted
-              playsInline
-              preload="metadata"
-              poster="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13213850/Celebrate-V_hero_d-cover.jpg?format=auto&width=1920"
-            >
-              <source
-                src="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13220818/Celebrate-V_hero_d-opt2.mp4"
-                type="video/mp4"
-              />
-              Ваш браузер не поддерживает видео.
-            </video>
-          </div>
+      <section className="relative overflow-hidden flex flex-col md:block">
+        <div className="inset-0 w-full h-auto z-0 object-cover">
+          <video
+            className="relative w-full h-auto bg-transparent hidden md:block"
+            loop
+            autoPlay
+            muted
+            playsInline
+            preload="metadata"
+            poster="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13213850/Celebrate-V_hero_d-cover.jpg?format=auto&width=1920"
+          >
+            <source
+              src="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13220818/Celebrate-V_hero_d-opt2.mp4"
+              type="video/mp4"
+            />
+            Ваш браузер не поддерживает видео.
+          </video>
+          <video
+            className="relative w-full h-auto bg-transparent md:hidden"
+            loop
+            autoPlay
+            muted
+            playsInline
+            preload="metadata"
+            poster="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13213846/Celebrate-V_hero_m_1-cover.jpg?format=auto&width=800"
+          >
+            <source
+              src="https://d3t8vy6km7cso3.cloudfront.net/2025/02/13223109/Celebrate-V_hero_m_1-opt.mp4"
+              type="video/mp4"
+            />
+            Ваш браузер не поддерживает видео.
+          </video>
+        </div>
 
-          <div className="content">
-            <div className="content-wrapper">
-              <div className="content__title">
-                <h1 className="title-text">
+        <div className="md:absolute md:bg-transparent bg-black w-full h-full py-13 md:py-0 lg:py-20 top-0 left-0 z-1">
+          <div className="h-full grid md:grid-cols-[1fr_28fr_1fr] grid-cols-[1fr_minmax(343px,22fr)_1fr] items-center">
+            <div className="grid md:grid-cols-[1fr_1fr] md:grid-rows-1 col-[2/3]">
+              <div className="w-full h-auto m-[40px_auto] text-white space-y-6 md:max-w-[35vw]">
+                <h1 class="text-[38px] leading-[43px] tracking-[2.5px] text-center uppercase font-normal font-[vieren-type-regular,Lato,sans-serif]">
                   CELEBRATE V
                 </h1>
-              </div>
-              <div className="content__description">
-                <h4 className="description-text">
+                <h4 class="text-[22px] leading-[31px] tracking-[0.3px] text-center font-light font-[Lato,sans-serif]">
                   Unlock priority access to VIEREN’s 5-Year Anniversary Collection — launching Fall 2025.
                 </h4>
-              </div>
 
-              <div className="form-container">
-                <form className="form-subscribe">
-                  <div className="email-input">
-                    <input type="text" className="email-input_value" />
-                  </div>
-                  <div className="submit-btn">
-                    <button className="submit-btn_action">
-                      join the waitlist
-                    </button>
-                  </div>
-                </form>
-
-                <div className="form-notice">
-                  <p className="form-notice_text">
+                <form className="m-[40px_8%_0]">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="appearance-none bg-white border border-[#bbbbbb] box-border px-[13px] w-full text-[#3b3b3b]
+                    font-[Lato,sans-serif] font-light text-[15px] leading-[30px] tracking-[0.5px]
+                    h-[45px] rounded-none mb-[15px]" 
+                  />
+                  <button
+                    type="submit"
+                    class="appearance-button overflow-visible bg-[#575757] text-white h-[45px] cursor-pointer
+                    font-[Lato,sans-serif] font-normal text-[15px] tracking-[0.5px] text-center uppercase border-0
+                    box-border py-[9px] w-full"
+                  >
+                    join the waitlist
+                  </button>
+                  <p class="text-white font-[Lato,sans-serif] font-light text-[11px] leading-[2] tracking-[0.61px] text-center mt-[1rem]">
                     By joining the list you agree to receive emails from VIEREN
                   </p>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
+        
       </section>
 
-      <section className="section-content">
-        <div className="sectionContent_container">
-          <div className="picture-wrapper">
+      <section className="section-content relative overflow-hidden flex flex-col md:block">
+        <div className="sectionContent_container inset-0 w-full h-auto z-0 object-cover">
+          <div className="picture-wrapper relative w-full h-auto bg-transparent hidden md:block">
             <img src="https://d3t8vy6km7cso3.cloudfront.net/2025/05/05210305/home-hero-scaled.jpeg?format=auto" alt="background, gold watches" className="picture-img" />
           </div>
 
-          <div className="section-content__content">
-            <div className="content-wrapper">
-              <div className="content__title">
-                <h1 className="title-text">
-                  STAND OUT IN GOLD
-                </h1>
-              </div>
+          <div className="section-content__content md:absolute md:bg-transparent bg-black w-full h-full top-0 left-0 z-1">
+            <div className="content-wrapper h-full grid md:grid-cols-[1fr_28fr_1fr] grid-cols-[1fr_minmax(343px,22fr)_1fr] items-center">
+              <div className="grid md:grid-cols-[1fr_1fr] md:grid-rows-1 col-[2/3]">
+                <div className="w-full h-auto m-[40px_auto_40px_100px] flex flex-col items-center text-white space-y-6 md:max-w-[35vw] col-[2/3]">
+                  <h1 className="title-text text-[38px] leading-[43px] tracking-[2.5px] text-center uppercase font-normal font-[vieren-type-regular,Lato,sans-serif]">
+                    STAND OUT IN GOLD
+                  </h1>
 
-              <div className="content__description">
-                <h4 className="description-text">
-                  Fusing sound and style
-                </h4>
-              </div>
+                  <h4 className="description-text text-[22px] leading-[31px] tracking-[0.3px] text-center font-light font-[Lato,sans-serif]">
+                    Fusing sound and style
+                  </h4>
 
-              <div className="content__btn-call-to">
-                <button className="btn-call-to_action">
-                  EXPLORE STEREO
-                </button>
+                  <button className="
+                      btn-call-to_action min-w-[150px] appearance-button overflow-visible bg-[#575757] text-white min-h-[45px] cursor-pointer
+                      font-[Lato,sans-serif] font-normal text-[14px] tracking-[0.4px] text-center uppercase border-0 leading-[45px] box-border px-[2em]
+                    "
+                  >
+                    EXPLORE STEREO
+                  </button>
+                </div>
               </div>
+              
             </div>
           </div>
         </div>
