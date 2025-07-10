@@ -24,112 +24,32 @@ select {
   font: inherit;
 }
 
-.section-content {
-  @apply relative overflow-hidden flex flex-col lg:block;
+@theme {
+
+  --animate-slide: slide-left 10s linear infinite;
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(100%);
+    }
+    25% {
+      transform: translateX(100%);
+    }
+    33.33% {
+      transform: translateX(0);
+    }
+    58.33% {
+      transform: translateX(0);
+    }
+    66.66% {
+      transform: translateX(-100%);
+    }
+    91.66% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
 }
 
-.section-content-container {
-  @apply inset-0 w-full h-auto z-0 lg:object-cover;
-}
-
-.bg-wrapper {
-  @apply relative w-full h-auto bg-transparent;
-}
-
-.section-content__content {
-  @apply lg:absolute lg:bg-transparent bg-(--color-black) w-full h-full top-0 left-0 z-1 pb-20 lg:pb-0;
-}
-
-.content-wrapper {
-  @apply h-full grid lg:grid-cols-[1fr_28fr_1fr] grid-cols-[1fr_minmax(343px,22fr)_1fr] items-center;
-}
-
-.content-wrapper__grid {
-  @apply lg:grid lg:grid-cols-[1fr_1fr] lg:grid-rows-1 m-[40px_auto] lg:m-0 col-[2/3];
-}
-
-.content-wrapper__flex {
-  @apply w-full h-auto flex flex-col items-center text-(--color-white) lg:max-w-[35vw];
-}
-
-.title-text {
-  @apply text-[30px] lg:text-[38px] text-center font-[vieren-type-regular,Lato,sans-serif];
-}
-
-.description-text {
-  @apply text-[22px] leading-[31px] tracking-[0.3px] text-center font-light font-[Lato,sans-serif] m-[10px_0] lg:m-[0_0_10px_0];
-}
-
-.btn-call-to_action {
-  @apply min-w-[150px] overflow-visible text-(--color-white) min-h-[45px] cursor-pointer 
-  font-[Lato,sans-serif] font-normal text-[14px] tracking-[0.4px] text-center uppercase border-0 leading-[45px] box-border 
-  px-[2em] transition-colors duration-300;
-}
-
-.bg-content-mobile {
-  @apply relative w-full h-auto bg-transparent lg:hidden;
-}
-
-.bg-content-desktop {
-  @apply relative w-full h-auto bg-transparent hidden lg:block;
-}
-
-.section-header {
-  @apply mt-24 lg:mt-30;
-}
-
-.section-header-container {
-  @apply px-(--page-margin);
-}
-
-.section-header__title {
-  @apply text-[30px] md:text-[38px] text-center font-[vieren-type-regular,Lato,sans-serif] tracking-[2px] md:tracking-[2.5px] leading-[35px] md:leading-[43px] font-normal;
-}
-
-.luxury-content__card {
-  @apply flex flex-col gap-3;
-}
-
-.card__wrapper-content {
-  @apply flex flex-col items-center;
-}
-
-.content-desktop {
-  @apply hidden lg:block w-auto h-auto;
-}
-
-.content-desktop-hover {
-  @apply absolute inset-0 w-full h-full object-cover hidden group-hover:lg:block transition-all duration-300;
-}
-
-.content-mobile {
-  @apply lg:hidden w-auto h-auto;
-}
-
-.content-mobile-hover {
-  @apply absolute inset-0 w-full h-full object-cover hidden group-hover:block transition-all duration-300;
-}
-
-.card__title-text, .excel-title-text {
-  @apply text-[20px] md:text-[22px] text-center font-[vieren-type-regular,Lato,sans-serif] tracking-[2px] md:tracking-[1px] leading-[25px] md:leading-[27px] font-normal;
-}
-
-.card__price-text {
-  @apply text-(--color-gray) font-[Lato,sans-serif] font-normal text-[12px] leading-[27px] tracking-[0.67px];
-}
-
-.section-content__btn-call-to {
-  @apply flex justify-center;
-}
-
-.stars-content__card {
-  @apply flex flex-col gap-[15px];
-}
-
-.stars-title-text, .excel-description-text {
-  @apply text-[14px] md:text-[16px] font-[Lato,sans-serif] tracking-[1px] leading-[24px] md:leading-[26px] font-light;
-}
-
-.excel-content__card {
-  @apply flex flex-col gap-2.5 items-center
-}

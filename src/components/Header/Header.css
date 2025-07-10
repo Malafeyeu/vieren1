@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.link-text, .btn-text {
+  @apply text-[12px] tracking-[0.75px] text-center font-normal font-[Lato,sans-serif] uppercase;
+}
+
+.nav-item__link, .nav-item__btn {
+  @apply relative bg-transparent after:content-[''] after:absolute after:left-0 after:w-0 after:bg-current after:transition-[width] after:duration-700 hover:after:w-full cursor-pointer;
+}
