@@ -1,16 +1,12 @@
-
 const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-
         <nav className="navigate">
           <ul className="navigate__list">
-            {['watches', 'design', 'craft', 'about', 'stories'].map((item) => (
+            {["watches", "design", "craft", "about", "stories"].map((item) => (
               <li key={item} className="list-item">
-                <span className="list-item__link">
-                  {item}
-                </span>
+                <span className="list-item__link">{item}</span>
               </li>
             ))}
           </ul>
@@ -27,9 +23,7 @@ const Header = () => {
         <nav className="navigate">
           <ul className="navigate__list">
             <li className="list-item">
-              <span className="list-item__link">
-                $usd
-              </span>
+              <span className="list-item__link">$usd</span>
             </li>
             <li className="list-item">
               <svg width="13" height="15" viewBox="0 0 13 15">
@@ -52,7 +46,12 @@ const Header = () => {
         </nav>
 
         <button className="navigate__burger hidden">
-          <svg className="w-auto h-[15px] text-white" width="33" height="25" viewBox="0 0 33 25">
+          <svg
+            className="w-auto h-[15px] text-(--color-white)"
+            width="33"
+            height="25"
+            viewBox="0 0 33 25"
+          >
             <g fill="currentColor" fill-rule="evenodd">
               <path d="M0 11h33v3H0zM0 0h33v3H0zM0 22h33v3H0z"></path>
             </g>
@@ -68,7 +67,7 @@ const Header = () => {
           <button className="siteMessage__close">
             <svg width="24px" height="24px" viewBox="0 -960 960 960">
               <g fill="#ffffff" fill-rule="evenodd">
-                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
               </g>
             </svg>
           </button>
