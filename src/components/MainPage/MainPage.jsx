@@ -178,7 +178,7 @@ export default function MainPage() {
       </section>
       {/*HEADER SECTION 3*/}
       <section className="section-header lg:pb-5">
-        <div className="section-header-container">
+        <div className="section-header__container">
           <h2 className="section-header__title">SHOP SWISS LUXURY WATCHES</h2>
         </div>
       </section>
@@ -341,7 +341,7 @@ export default function MainPage() {
       </section>
       {/*HEADER SECTION 5*/}
       <section className="section-header lg:pb-5">
-        <div className="section-header-container">
+        <div className="section-header__container">
           <a href="">
             <h2 className="section-header__title">AS SEEN ON @VIERENTIME</h2>
           </a>
@@ -425,7 +425,7 @@ export default function MainPage() {
       </section>
       {/*HEADER SECTION 6*/}
       <section className="section-header bg-(--color-black) text-(--color-white) pt-25 md:pt-[130px]">
-        <div className="section-header-container flex flex-col text-center">
+        <div className="section-header__container flex flex-col text-center">
           <h2 className="section-header__title mb-2.5">DISTINCTLY VIEREN</h2>
 
           <h4 className="section-header__subtitle text-[20px] md:text-[22px] text-center font-[Lato,sans-serif] tracking-[0.3px] leading-[29px] md:leading-[31px] font-light m-[5px_0_10px]">

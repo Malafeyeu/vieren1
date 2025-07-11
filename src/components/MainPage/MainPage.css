@@ -54,7 +54,7 @@
   @apply mt-24 lg:mt-30;
 }
 
-.section-header-container {
+.section-header__container {
   @apply px-(--page-margin);
 }
 

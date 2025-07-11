@@ -24,31 +24,10 @@ select {
   font: inherit;
 }
 
-@theme {
+ul, li {
+  list-style: none;
+}
 
-  --animate-slide: slide-left 10s linear infinite;
-
-  @keyframes slide-left {
-    0% {
-      transform: translateX(100%);
-    }
-    25% {
-      transform: translateX(100%);
-    }
-    33.33% {
-      transform: translateX(0);
-    }
-    58.33% {
-      transform: translateX(0);
-    }
-    66.66% {
-      transform: translateX(-100%);
-    }
-    91.66% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
+a {
+  text-decoration: none;
 }
