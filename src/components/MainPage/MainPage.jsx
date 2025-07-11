@@ -3,10 +3,9 @@ import "./MainPage.css";
 export default function MainPage() {
   return (
     <main className="wrapper">
-
-{/*BANNER*/}
-      <section className="section-content">
-        <div className="section-content-container">
+      {/*BANNER*/}
+      <section className="content-section">
+        <div className="content-section__container">
           <div className="bg-wrapper">
             <video
               className="bg-content-desktop"
@@ -40,10 +39,10 @@ export default function MainPage() {
             </video>
           </div>
 
-          <div className="section-content__content">
-            <div className="content-wrapper">
-              <div className="content-wrapper__grid">
-                <div className="content-wrapper__flex lg:m-auto">
+          <div className="section-content__content bg-(--color-black)">
+            <div className="content-section__wrapper">
+              <div className="content-section__grid">
+                <div className="content-section__flex lg:m-auto">
                   <h1 className="title-text whitespace-nowrap tracking-[2px] md:tracking-[2.5px] leading-[35px] md:leading-[43px] font-normal uppercase m-[10px_8px] lg:m-[0_0_30px_0]">
                     CELEBRATE V
                   </h1>
@@ -79,9 +78,9 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-{/*SECTION 1*/}
-      <section className="section-content ">
-        <div className="section-content-container">
+      {/*SECTION 1*/}
+      <section className="content-section ">
+        <div className="content-section__container">
           <div className="bg-wrapper">
             <img
               src="https://d3t8vy6km7cso3.cloudfront.net/2025/05/05210305/home-hero-scaled.jpeg?format=auto"
@@ -95,15 +94,17 @@ export default function MainPage() {
             />
           </div>
 
-          <div className="section-content__content">
-            <div className="content-wrapper">
-              <div className="content-wrapper__grid">
-                <div className="content-wrapper__flex lg:m-[40px_auto_40px_150px] col-[2/3]">
+          <div className="section-content__content bg-(--color-black)">
+            <div className="content-section__wrapper">
+              <div className="content-section__grid">
+                <div className="content-section__flex lg:m-[40px_auto_40px_150px] col-[2/3]">
                   <h2 className="title-text text-(--color-white) whitespace-nowrap tracking-[2px] md:tracking-[2.5px] leading-[35px] md:leading-[43px] font-normal uppercase m-[10px_8px] lg:m-[0_0_30px]">
                     STAND OUT IN GOLD
                   </h2>
 
-                  <h4 className="description-text text-(--color-white)">Fusing sound and style</h4>
+                  <h4 className="description-text text-(--color-white)">
+                    Fusing sound and style
+                  </h4>
 
                   <button className="btn-call-to_action bg-[#575757] hover:bg-[#979797] mt-10">
                     EXPLORE STEREO
@@ -114,9 +115,9 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-{/*SECTION 2*/}
-      <section className="section-content">
-        <div className="section-content-container">
+      {/*SECTION 2*/}
+      <section className="content-section">
+        <div className="content-section__container">
           <div className="bg-wrapper">
             <video
               className="bg-content-desktop"
@@ -151,10 +152,10 @@ export default function MainPage() {
             </video>
           </div>
 
-          <div className="section-content__content">
-            <div className="content-wrapper">
-              <div className="content-wrapper__grid">
-                <div className="content-wrapper__flex lg:m-auto">
+          <div className="section-content__content bg-(--color-black)">
+            <div className="content-section__wrapper">
+              <div className="content-section__grid">
+                <div className="content-section__flex lg:m-auto">
                   <h2 className="title-text text-(--color-white) tracking-[0.38px] md:tracking-[0.49px] leading-[39px] md:leading-[47px] font-light m-[10px_8px] lg:m-[0_0_10px_0]">
                     "Bringing glamour to gender-neutral watchmaking"
                   </h2>
@@ -175,17 +176,17 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-{/*HEADER SECTION 3*/}
+      {/*HEADER SECTION 3*/}
       <section className="section-header lg:pb-5">
         <div className="section-header-container">
           <h2 className="section-header__title">SHOP SWISS LUXURY WATCHES</h2>
         </div>
       </section>
-{/*SECTION 3*/}
-      <section className="section-content m-[50px_3.3vw_0]">
-        <div className="section-content-container">
-          <div className="luxury-content flex flex-row gap-2.5">
-            <article className="luxury-content__card h-auto">
+      {/*SECTION 3*/}
+      <section className="content-section m-[50px_3.3vw_0]">
+        <div className="content-section__container">
+          <div className="product-list flex flex-row gap-2.5">
+            <article className="product-list__item h-auto">
               <a href="" className="h-auto">
                 <div className="card__img group relative inline-block overflow-hidden">
                   <img
@@ -211,14 +212,18 @@ export default function MainPage() {
                   />
                 </div>
               </a>
-              <div className="card__wrapper-content">
+              <div className="product-card__content">
                 <a href="">
-                  <h2 className="card__title-text text-(--color-black)">MATTE WHITE</h2>
+                  <h2 className="product-card__title text-(--color-black)">
+                    MATTE WHITE
+                  </h2>
                 </a>
-                <span className="card__price-text text-(--color-black)">$3,500 USD</span>
+                <span className="product-card__price text-(--color-black)">
+                  $3,500 USD
+                </span>
               </div>
             </article>
-            <article className="luxury-content__card">
+            <article className="product-list__item">
               <a href="">
                 <div className="card__img group relative inline-block overflow-hidden">
                   <img
@@ -244,14 +249,18 @@ export default function MainPage() {
                   />
                 </div>
               </a>
-              <div className="card__wrapper-content">
+              <div className="product-card__content">
                 <a href="">
-                  <h2 className="card__title-text text-(--color-black)">BLACK CROC</h2>
+                  <h2 className="product-card__title text-(--color-black)">
+                    BLACK CROC
+                  </h2>
                 </a>
-                <span className="card__price-text text-(--color-black)">$4,500 USD</span>
+                <span className="product-card__price text-(--color-black)">
+                  $4,500 USD
+                </span>
               </div>
             </article>
-            <article className="luxury-content__card">
+            <article className="product-list__item">
               <a href="">
                 <div className="card__img group relative inline-block overflow-hidden">
                   <img
@@ -278,11 +287,11 @@ export default function MainPage() {
                 </div>
               </a>
 
-              <div className="card__wrapper-content">
+              <div className="product-card__content">
                 <a href="">
-                  <h2 className="card__title-text">BLACK DIAMOND</h2>
+                  <h2 className="product-card__title">BLACK DIAMOND</h2>
                 </a>
-                <span className="card__price-text">$5,500 USD</span>
+                <span className="product-card__price">$5,500 USD</span>
               </div>
             </article>
           </div>
@@ -294,9 +303,9 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-{/*SECTION 4*/}
-      <section className="section-content mt-[150px]">
-        <div className="section-content-container">
+      {/*SECTION 4*/}
+      <section className="content-section mt-[150px]">
+        <div className="content-section__container">
           <div className="show-products lg:flex">
             <article className="show-products__element">
               <a href="">
@@ -330,7 +339,7 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-{/*HEADER SECTION 5*/}
+      {/*HEADER SECTION 5*/}
       <section className="section-header lg:pb-5">
         <div className="section-header-container">
           <a href="">
@@ -338,11 +347,11 @@ export default function MainPage() {
           </a>
         </div>
       </section>
-{/*SECTION 5*/}
-      <section className="section-content mt-10">
-        <div className="section-content-container md:px-[6.5%]">
-          <div className="stars-content flex flex-row">
-            <article className="stars-content__card pl-(--padding-card) lg:pl-(--page-margin)">
+      {/*SECTION 5*/}
+      <section className="content-section mt-10">
+        <div className="content-section__container md:px-[6.5%]">
+          <div className="stars-list flex flex-row">
+            <article className="stars-list__item pl-(--padding-card) lg:pl-(--page-margin)">
               <a href="">
                 <div className="card__img overflow-hidden">
                   <img
@@ -358,10 +367,12 @@ export default function MainPage() {
                 </div>
               </a>
               <div className="card__stars-title">
-                <h5 className="stars-title-text text-(--color-gray)">Sam Heughan in Black Croc</h5>
+                <h5 className="stars-title-text text-(--color-gray)">
+                  Sam Heughan in Black Croc
+                </h5>
               </div>
             </article>
-            <article className="stars-content__card pl-(--padding-card) pr-(--padding-card) lg:pl-(--padding-margin) lg:pr-(--padding-margin)">
+            <article className="stars-list__item pl-(--padding-card) pr-(--padding-card) lg:pl-(--padding-margin) lg:pr-(--padding-margin)">
               <a href="">
                 <div className="card__img overflow-hidden">
                   <img
@@ -382,7 +393,7 @@ export default function MainPage() {
                 </h5>
               </div>
             </article>
-            <article className="stars-content__card pr-(--padding-card) lg:pr-(--page-margin)">
+            <article className="stars-list__item pr-(--padding-card) lg:pr-(--page-margin)">
               <a href="">
                 <div className="card__img overflow-hidden">
                   <img
@@ -412,7 +423,7 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-{/*HEADER SECTION 6*/}
+      {/*HEADER SECTION 6*/}
       <section className="section-header bg-(--color-black) text-(--color-white) pt-25 md:pt-[130px]">
         <div className="section-header-container flex flex-col text-center">
           <h2 className="section-header__title mb-2.5">DISTINCTLY VIEREN</h2>
@@ -423,11 +434,11 @@ export default function MainPage() {
           </h4>
         </div>
       </section>
-{/*SECTION 6*/}
-      <section className="section-content bg-(--color-black) text-(--color-white)">
-        <div className="section-content-container p-[40px_0_100px] lg:p-[40px_3.5%_130px]">
-          <div className="excel-content flex flex-row lg:gap-5">
-            <article className="excel-content__card pl-(--padding-card) lg:pl-(--page-margin)">
+      {/*SECTION 6*/}
+      <section className="content-section bg-(--color-black) text-(--color-white)">
+        <div className="content-section__container p-[40px_0_100px] lg:p-[40px_3.5%_130px]">
+          <div className="features-list flex flex-row lg:gap-5">
+            <article className="features-list__item pl-(--padding-card) lg:pl-(--page-margin)">
               <div className="card__img overflow-hidden mb-4">
                 <img
                   src="https://d3t8vy6km7cso3.cloudfront.net/2024/11/28184422/ultra-thin-rectangular-case.jpeg?format=auto&width=1920"
@@ -441,9 +452,7 @@ export default function MainPage() {
                 />
               </div>
               <div className="card__excel-title">
-                <h4 className="excel-title-text">
-                  RECTANGULAR ICON
-                </h4>
+                <h4 className="excel-title-text">RECTANGULAR ICON</h4>
               </div>
               <div className="card__excel-description">
                 <h5 className="excel-description-text">
@@ -451,7 +460,7 @@ export default function MainPage() {
                 </h5>
               </div>
             </article>
-            <article className="excel-content__card pl-(--padding-card) pr-(--padding-card) lg:pl-(--padding-margin) lg:pr-(--padding-margin)">
+            <article className="features-list__item pl-(--padding-card) pr-(--padding-card) lg:pl-(--padding-margin) lg:pr-(--padding-margin)">
               <div className="card__img overflow-hidden mb-4">
                 <img
                   src="https://d3t8vy6km7cso3.cloudfront.net/2024/11/28184449/certfied-swiss-made-automatic.jpeg?format=auto&width=1920"
@@ -465,9 +474,7 @@ export default function MainPage() {
                 />
               </div>
               <div className="card__excel-title">
-                <h4 className="excel-title-text">
-                  CERTIFIED SWISS MADE
-                </h4>
+                <h4 className="excel-title-text">CERTIFIED SWISS MADE</h4>
               </div>
               <div className="card__excel-description">
                 <h5 className="excel-description-text text-center">
@@ -475,7 +482,7 @@ export default function MainPage() {
                 </h5>
               </div>
             </article>
-            <article className="excel-content__card pr-(--padding-card) lg:pr-(--page-margin)">
+            <article className="features-list__item pr-(--padding-card) lg:pr-(--page-margin)">
               <div className="card__img overflow-hidden mb-4">
                 <img
                   src="https://d3t8vy6km7cso3.cloudfront.net/2024/11/28184441/gold-ring.jpeg?format=auto&width=1920"
@@ -489,9 +496,7 @@ export default function MainPage() {
                 />
               </div>
               <div className="card__excel-title">
-                <h4 className="excel-title-text">
-                  AWARD-WINNING DESIGNS
-                </h4>
+                <h4 className="excel-title-text">AWARD-WINNING DESIGNS</h4>
               </div>
               <div className="card__excel-description">
                 <h5 className="excel-description-text text-center">
@@ -502,9 +507,9 @@ export default function MainPage() {
           </div>
         </div>
       </section>
-{/*SECTION 7*/}
-      <section className="section-content">
-        <div className="section-content-container">
+      {/*SECTION 7*/}
+      <section className="content-section">
+        <div className="content-section__container">
           <div className="bg-wrapper">
             <img
               src="https://d3t8vy6km7cso3.cloudfront.net/2024/11/05140058/power-your-time_d-v4-scaled.jpg?format=auto"
@@ -518,10 +523,10 @@ export default function MainPage() {
             />
           </div>
 
-          <div className="section-content__content">
-            <div className="content-wrapper">
-              <div className="content-wrapper__grid">
-                <div className="content-wrapper__flex m-auto col-[2/3]">
+          <div className="section-content__content bg-[#0f0f10]">
+            <div className="content-section__wrapper">
+              <div className="content-section__grid">
+                <div className="content-section__flex m-auto col-[2/3]">
                   <h2 className="title-text tracking-[2px] md:tracking-[2.5px] leading-[35px] md:leading-[43px] font-normal uppercase m-[10px_8px] lg:m-[0_0_20px]">
                     POWER YOUR TIME
                   </h2>
@@ -530,50 +535,68 @@ export default function MainPage() {
                     Experience the art of luxury watchmaking
                   </h4>
 
-                  <button className="btn-call-to_action bg-[#575757] hover:bg-[#979797] mt-10">ABOUT VIEREN</button>
+                  <button className="btn-call-to_action bg-[#575757] hover:bg-[#979797] mt-10">
+                    ABOUT VIEREN
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/*SECTION 8*/}
+      <section className="info-cards__list">
+        <div className="info-cards__container py-[30px] bg-(--color-white)">
+          <div className="info-section__wrapper content-section__wrapper">
+            <div className="info-section__content col-[2/3]">
+              <div className="info-cards__list flex flex-col md:flex-row justify-center gap-[26px] md:gap-[10.42vw] xl:gap-[14vw]">
+                <article className="info-cards__item">
+                  <div className="info-card__image">
+                    <img
+                      src="https://vieren.co/static/6b5e24c4126a076489fe23840731b277/ae391/free-shipping.webp"
+                      alt="free shipping"
+                      className="w-[30px] h-[18px]"
+                    />
+                  </div>
+                  <div className="info-card__title">
+                    <h4 className="info-product-card__title">
+                      Complimentary Shipping
+                    </h4>
+                  </div>
+                </article>
 
-      {/* <section className="support">
-        <div className="support-container">
-          <aside className="support__card">
-            <div className="card__img">
-              <img src="/static/6b5e24c4126a076489fe23840731b277/08e10/free-shipping.png" alt="free shipping" />
-            </div>
-            <div className="card__title">
-              <h4 className="title-text">
-                Complimentary Shipping
-              </h4>
-            </div>
-          </aside>
+                <article className="info-cards__item">
+                  <div className="info-card__image">
+                    <img
+                      src="https://vieren.co/static/b13002354cdfcb6a43a99495c18b00b2/bb512/30-day-returns-2.webp"
+                      alt="returns"
+                      className="w-[30px] h-[18px]"
+                    />
+                  </div>
+                  <div className="info-card__title">
+                    <h4 className="info-product-card__title">30 Day Returns</h4>
+                  </div>
+                </article>
 
-          <aside className="support__card">
-            <div className="card__img">
-              <img src="/static/b13002354cdfcb6a43a99495c18b00b2/1e106/30-day-returns-2.png" alt="returns" />
+                <article className="info-cards__item">
+                  <div className="info-card__image">
+                    <img
+                      src="https://vieren.co/static/d8bae71c3d00144f4d6ca2e561683690/17c49/warranty.webp"
+                      alt="warranty"
+                      className="w-[22px] h-[18px]"
+                    />
+                  </div>
+                  <div className="info-card__title">
+                    <h4 className="info-product-card__title">
+                      2 Year Warranty
+                    </h4>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div className="card__title">
-              <h4 className="title-text">
-                30 Day Returns
-              </h4>
-            </div>
-          </aside>
-
-          <aside className="support__card">
-            <div className="card__img">
-              <img src="/static/d8bae71c3d00144f4d6ca2e561683690/ec1a6/warranty.png" alt="warranty" />
-            </div>
-            <div className="card__title">
-              <h4 className="title-text">
-                2 Year Warranty
-              </h4>
-            </div>
-          </aside>
+          </div>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }

@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-.section-content {
+.content-section {
   @apply relative overflow-hidden flex flex-col lg:block;
 }
 
-.section-content-container {
+.content-section__container {
   @apply inset-0 w-full h-auto z-0 lg:object-cover;
 }
 
@@ -13,18 +13,18 @@
 }
 
 .section-content__content {
-  @apply lg:absolute lg:bg-transparent bg-(--color-black) w-full h-full top-0 left-0 z-1 pb-20 lg:pb-0;
+  @apply lg:absolute lg:bg-transparent w-full h-full top-0 left-0 z-1 pb-20 lg:pb-0;
 }
 
-.content-wrapper {
+.content-section__wrapper {
   @apply h-full grid lg:grid-cols-[1fr_28fr_1fr] grid-cols-[1fr_minmax(343px,22fr)_1fr] items-center;
 }
 
-.content-wrapper__grid {
+.content-section__grid {
   @apply lg:grid lg:grid-cols-[1fr_1fr] lg:grid-rows-1 m-[40px_auto] lg:m-0 col-[2/3];
 }
 
-.content-wrapper__flex {
+.content-section__flex {
   @apply w-full h-auto flex flex-col items-center text-(--color-white) lg:max-w-[35vw];
 }
 
@@ -62,11 +62,11 @@
   @apply text-[30px] md:text-[38px] text-center font-[vieren-type-regular,Lato,sans-serif] tracking-[2px] md:tracking-[2.5px] leading-[35px] md:leading-[43px] font-normal;
 }
 
-.luxury-content__card {
+.product-list__item {
   @apply flex flex-col gap-3;
 }
 
-.card__wrapper-content {
+.product-card__content {
   @apply flex flex-col items-center;
 }
 
@@ -86,11 +86,12 @@
   @apply absolute inset-0 w-full h-full object-cover hidden group-hover:block transition-all duration-300;
 }
 
-.card__title-text, .excel-title-text {
+.product-card__title,
+.excel-title-text {
   @apply text-[20px] md:text-[22px] text-center font-[vieren-type-regular,Lato,sans-serif] tracking-[2px] md:tracking-[1px] leading-[25px] md:leading-[27px] font-normal;
 }
 
-.card__price-text {
+.product-card__price {
   @apply text-(--color-gray) font-[Lato,sans-serif] font-normal text-[12px] leading-[27px] tracking-[0.67px];
 }
 
@@ -98,14 +99,27 @@
   @apply flex justify-center;
 }
 
-.stars-content__card {
+.stars-list__item {
   @apply flex flex-col gap-[15px];
 }
 
-.stars-title-text, .excel-description-text {
+.stars-title-text,
+.excel-description-text {
   @apply text-[14px] md:text-[16px] font-[Lato,sans-serif] tracking-[1px] leading-[24px] md:leading-[26px] font-light;
 }
 
-.excel-content__card {
-  @apply flex flex-col gap-2.5 items-center
+.features-list__item {
+  @apply flex flex-col gap-2.5 items-center;
+}
+
+.info-cards__item {
+  @apply flex flex-col justify-center items-center gap-[5px];
+}
+
+.info-card__image {
+  @apply max-w-[30px];
+}
+
+.info-product-card__title {
+  @apply text-[14px] font-[Lato,sans-serif] tracking-[0.64px] leading-[26px] font-normal uppercase text-center;
 }
