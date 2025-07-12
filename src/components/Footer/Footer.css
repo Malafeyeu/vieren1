@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.site-footer__link-text, .site-footer__copyright {
+.site-footer__link-text {
   @apply text-(--color-white) after:bottom-[-4px] after:h-[0.5px] relative bg-transparent 
     after:content-[''] after:absolute after:left-0 after:w-0 after:bg-current after:transition-[width] 
     after:duration-500 hover:after:w-full cursor-pointer text-[9px] tracking-[0.5px] text-center font-light font-[Lato,sans-serif] leading-[20px];

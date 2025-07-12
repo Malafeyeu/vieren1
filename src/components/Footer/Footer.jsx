@@ -211,7 +211,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <span className="site-footer__copyright uppercase">
+          <span className="site-footer__copyright text-(--color-white) text-[9px] tracking-[0.5px] text-center font-light font-[Lato,sans-serif] leading-[20px] bg-transparent uppercase">
             © VIEREN 2025
           </span>
 
