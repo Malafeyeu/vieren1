@@ -20,10 +20,11 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <button className="site-header__message-close absolute bg-transparent right-[13px] top-[50%] translate-y-[-50%]">
-            <svg width="24px" height="24px" viewBox="0 -960 960 960">
-              <g fill="#ffffff" fillRule="evenodd">
-                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          <button className="site-header__message-close absolute bg-transparent right-[13px] top-[50%] translate-y-[-50%] text-(--color-white)">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" fillRule="evenodd">
+              <g>
+                <path d="M1.5 0.4l12.1 12.1-1.1 1.1L0.4 1.5z"/>
+                <path d="M12.4 0.4L0.4 12.4l1.1 1.1L13.5 1.5z"/>
               </g>
             </svg>
           </button>

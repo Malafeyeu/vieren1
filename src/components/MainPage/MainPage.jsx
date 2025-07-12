@@ -546,7 +546,7 @@ export default function MainPage() {
       </section>
       {/*SECTION 8*/}
       <section className="info-cards__list">
-        <div className="info-cards__container py-[30px] bg-(--color-white)">
+        <div className="info-cards__container py-[45px] lg:py-[30px] bg-(--color-white)">
           <div className="info-section__wrapper content-section__wrapper">
             <div className="info-section__content col-[2/3]">
               <div className="info-cards__list flex flex-col md:flex-row justify-center gap-[26px] md:gap-[10.42vw] xl:gap-[14vw]">

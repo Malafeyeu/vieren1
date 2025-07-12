@@ -3,19 +3,27 @@
 .site-footer__link-text, .site-footer__copyright {
   @apply text-(--color-white) after:bottom-[-4px] after:h-[0.5px] relative bg-transparent 
     after:content-[''] after:absolute after:left-0 after:w-0 after:bg-current after:transition-[width] 
-    after:duration-500 hover:after:w-full cursor-pointer text-[9px] tracking-[0.5px] text-center font-light font-[Lato,sans-serif] leading-[19px];
+    after:duration-500 hover:after:w-full cursor-pointer text-[9px] tracking-[0.5px] text-center font-light font-[Lato,sans-serif] leading-[20px];
   }
 
 .site-footer__nav-title {
-  @apply text-(--color-white) min-w-[98px] text-[12px] font-normal font-[Lato,sans-serif] leading-[30px] tracking-[0.67px] mb-2.5 uppercase;
-}
-
-.site-footer__nav-link {
-  @apply relative
+  @apply text-(--color-white) text-[12px] font-normal font-[Lato,sans-serif] leading-[30px] tracking-[0.67px] uppercase;
 }
 
 .site-footer__nav-link-text {
   @apply text-(--color-white) text-[12px] font-light font-[Lato,sans-serif] leading-[24.4px] tracking-[0.5px] after:bottom-[-4px] after:h-[0.5px] 
     relative bg-transparent after:content-[''] after:absolute after:left-0 after:w-0 after:bg-current after:transition-[width] after:duration-500 
     hover:after:w-full cursor-pointer;
+}
+
+.site-footer__card:nth-child(n+3):nth-child(odd) {
+  @apply max-w-[23px];
+}
+
+.site-footer__card:nth-child(n+3):nth-child(even) {
+  @apply max-w-[24px];
+}
+
+.site-footer__nav-column:nth-child(4) {
+  @apply border-y-1 lg:border-none
 }
