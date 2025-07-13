@@ -97,7 +97,7 @@ const Footer = () => {
                         >
                           <path 
                             fill="currentColor" 
-                            d="M9 9H5V5H1V4h4V0h1v4h4v1H6v4h1v"
+                            d="M9 9H5V5H1V4h4V0h1v4h4v1H6v4h1v1"
                           />
                         </svg>
                       </button>
